@@ -1,0 +1,13 @@
+(function (app) {
+
+   app.DashboardComponent = ng.core
+      .Component({
+         selector: "my-dashboard",
+         template: `<h3>My Dashboard</h3>`
+      })
+      .Class({
+         constructor: function () {
+            this.title = "Tour of Heroes Dashboard";
+         }
+      });
+})(window.app || (window.app = {}));

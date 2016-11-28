@@ -1,0 +1,14 @@
+(function (app) {
+
+   app.HeroService =
+      ng.core.Class({
+         constructor: function () {
+            console.log("in service");
+            this.getHeroes = function () {
+               return new Promise (resolve =>
+                  setTimeout(() => resolve(HEROES), 2000));
+            }
+         }
+      });
+
+})(window.app || (window.app = {}));
